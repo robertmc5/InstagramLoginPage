@@ -1,18 +1,20 @@
 /* Global */
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 html, body {
-  padding: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 
 body {
   background-color: #FAFAFA;
   font-family: 'Segoe UI', sans-serif;
+  padding-top: 3.5rem;
+  padding-bottom: 3.25rem;
 }
 
 /* Elements */
@@ -24,12 +26,12 @@ body {
 
 input {
   padding: 9px 0 7px 8px;
-  width: 260px;
+  width: 16.25rem;
   margin-bottom: 6px;
   border: 1px solid lightgray;
   background-color: #FAFAFA;
   border-radius: 3px;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-family: 'Segoe UI', sans-serif;
 }
 
@@ -38,8 +40,8 @@ input[type='submit'] {
   margin-top: 6px;
   border: none;
   padding: 6px 0 4px 0;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
   font-weight: 600;
   color: #FFF;
 }
@@ -50,19 +52,38 @@ hr {
 }
 
 .hr p {
-  color: gray;
-  font-size: 13px;
+  color: rgb(142, 142, 142);
+  font-size: 0.8125rem;
   font-weight: 600;
 }
 
-/* Layout */
+.bottom-panel span, p {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+}
+
+.bottom-panel a {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: rgb(0, 149, 246);
+}
+
+p {
+  text-align: center;
+  padding-block: 0.25rem;
+}
+
+/* Layout, Classes and IDs */
 
 .panel {
-  margin: 3rem auto 0.625rem;
+  margin: 0 auto 0.625rem;
   display: flex;
   justify-content: center;
   border: 1px solid lightgray;
-  width: 348px;
+  width: 21.75rem;
   background-color: #FFF;
 }
 
@@ -79,24 +100,24 @@ form {
 }
 
 .ig-logo {
-  width: 175px;
+  width: 10.9375rem;
   text-align: center;
 }
 
 .hr {
   width: 100%;
-  margin-block: 18px;
+  margin-block: 1.125rem;
   position: relative;
 }
 
 .hr div {
-  height: 18px;
+  height: 1.125rem;
   background-color: #FFF;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding-inline: 18px;
+  padding-inline: 1.125rem;
 }
 
 #fb-login {
@@ -104,26 +125,26 @@ form {
 }
 
 #fb-login a {
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
   font-weight: 600;
   text-decoration: none;
   color: rgb(56, 81, 133);
 }
 
 #fb-login img {
-  width: 17px;
+  width: 1.0625rem;
   margin-right: 8px;
   vertical-align: bottom;
 }
 
 .content-cntr:last-child {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 #forgot-pw {
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 0.75rem;
+  line-height: 1rem;
   text-decoration: none;
   color: rgb(0, 55, 107);
 }
@@ -131,41 +152,48 @@ form {
 .bottom-panel {
   margin: 0 auto 1rem;
   border: 1px solid lightgray;
-  width: 348px;
+  width: 21.75rem;
   background-color: #FFF;
   text-align: center;
   padding-block: 1rem;
 }
 
-.bottom-panel span, p {
-  font-family: 'Segoe UI', sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-}
-
-.bottom-panel a {
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 600;
-  text-decoration: none;
-  color: rgb(0, 149, 246);
-}
-
-p {
-  text-align: center;
-  padding-block: 0.25rem;
-}
-
 #appStores {
   text-align: center;
   padding-block: 1rem;
+  margin-bottom: 3.75rem;
 }
 
 #google, #ms {
-  width: 134px;
-  height: 40px;
+  width: 8.375rem;
+  height: 2.5rem;
 }
 
 #ms {
-  width: 111px;;
+  width: 6.9375rem;
+}
+
+footer {
+  text-align: center;
+}
+
+footer > ul {
+  width: 90%;
+  margin: 1.5rem auto 0.75rem;
+}
+
+footer li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 1px 0.375rem;
+}
+
+footer a, footer p {
+  color: rgb(142, 142, 142);
+  text-decoration: none;
+  font-size: 0.75rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }

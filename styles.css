@@ -10,3 +10,162 @@ html, body {
   height: 100%;
 }
 
+body {
+  background-color: #FAFAFA;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Elements */
+
+.ig-logo > img {
+  width: 100%;
+  padding-block: 3rem;
+}
+
+input {
+  padding: 9px 0 7px 8px;
+  width: 260px;
+  margin-bottom: 6px;
+  border: 1px solid lightgray;
+  background-color: #FAFAFA;
+  border-radius: 3px;
+  font-size: 12px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+input[type='submit'] {
+  background-color: #B2DFFC;
+  margin-top: 6px;
+  border: none;
+  padding: 6px 0 4px 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  color: #FFF;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid lightgray;
+}
+
+.hr p {
+  color: gray;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Layout */
+
+.panel {
+  margin: 3rem auto 0.625rem;
+  display: flex;
+  justify-content: center;
+  border: 1px solid lightgray;
+  width: 348px;
+  background-color: #FFF;
+}
+
+.content-cntr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.ig-logo {
+  width: 175px;
+  text-align: center;
+}
+
+.hr {
+  width: 100%;
+  margin-block: 18px;
+  position: relative;
+}
+
+.hr div {
+  height: 18px;
+  background-color: #FFF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-inline: 18px;
+}
+
+#fb-login {
+  padding-block: 1rem;
+}
+
+#fb-login a {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  color: rgb(56, 81, 133);
+}
+
+#fb-login img {
+  width: 17px;
+  margin-right: 8px;
+  vertical-align: bottom;
+}
+
+.content-cntr:last-child {
+  margin-bottom: 20px;
+}
+
+#forgot-pw {
+  font-size: 12px;
+  line-height: 16px;
+  text-decoration: none;
+  color: rgb(0, 55, 107);
+}
+
+.bottom-panel {
+  margin: 0 auto 1rem;
+  border: 1px solid lightgray;
+  width: 348px;
+  background-color: #FFF;
+  text-align: center;
+  padding-block: 1rem;
+}
+
+.bottom-panel span, p {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.bottom-panel a {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  color: rgb(0, 149, 246);
+}
+
+p {
+  text-align: center;
+  padding-block: 0.25rem;
+}
+
+#appStores {
+  text-align: center;
+  padding-block: 1rem;
+}
+
+#google, #ms {
+  width: 134px;
+  height: 40px;
+}
+
+#ms {
+  width: 111px;;
+}

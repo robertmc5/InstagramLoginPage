@@ -13,7 +13,7 @@ html, body {
 body {
   background-color: #FAFAFA;
   font-family: 'Segoe UI', sans-serif;
-  padding-top: 3.5rem;
+  padding-top: 4.5rem;
   padding-bottom: 3.25rem;
 }
 
@@ -71,12 +71,15 @@ hr {
   color: rgb(0, 149, 246);
 }
 
-p {
+.main-cntr > p {
   text-align: center;
   padding-block: 0.25rem;
 }
 
-/* Layout, Classes and IDs */
+/* Layout, Classes and IDs  ===============================================  */
+.desktop {
+  display: none;
+}
 
 .panel {
   margin: 0 auto 0.625rem;
@@ -132,8 +135,9 @@ form {
   color: rgb(56, 81, 133);
 }
 
-#fb-login img {
-  width: 1.0625rem;
+.fa-square-facebook {
+  color: #385185;
+  font-size: 1.125rem;
   margin-right: 8px;
   vertical-align: bottom;
 }
@@ -161,7 +165,7 @@ form {
 #appStores {
   text-align: center;
   padding-block: 1rem;
-  margin-bottom: 3.75rem;
+  margin-bottom: 4.75rem;
 }
 
 #google, #ms {
@@ -197,3 +201,41 @@ footer a, footer p {
 footer a:hover {
   text-decoration: underline;
 }
+
+/* Small devices  =========================================================  */
+@media only screen and (max-width: 28.125rem) {
+  body {
+    padding-top: 0;
+  }
+  .ig-logo > img {
+    padding-block: 3rem 2rem;
+  }
+  .panel, .bottom-panel {
+    border: none;
+    width: 100%;
+    background-color: #FAFAFA;
+  }
+  .bottom-panel {
+    padding-block: 4.25rem;
+  }
+  #appStores {
+    margin-bottom: 2.75rem;
+  }
+} 
+
+/* Large devices  =========================================================  */
+@media only screen and (min-width: 54.75rem) {
+  .outer-cntr {
+    display: flex;
+    justify-content: center;
+  }
+  .main-cntr {
+    margin-top: 0.75rem;
+  }
+  .desktop {
+    display: block;
+  }
+  .desktop img {
+    margin-right: 2rem;
+  }
+} 

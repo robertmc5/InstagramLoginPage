@@ -19,7 +19,7 @@ body {
 
 /* Elements */
 
-.ig-logo > img {
+.ig-logo-container > img {
   width: 100%;
   padding-block: 3rem;
 }
@@ -57,13 +57,13 @@ hr {
   font-weight: 600;
 }
 
-.bottom-panel span, p {
+.signup-panel span, p {
   font-family: 'Segoe UI', sans-serif;
   font-size: 0.875rem;
   line-height: 1.125rem;
 }
 
-.bottom-panel a {
+.signup-panel a {
   font-size: 0.875rem;
   line-height: 1.125rem;
   font-weight: 600;
@@ -71,30 +71,25 @@ hr {
   color: rgb(0, 149, 246);
 }
 
-.main-cntr > p {
+.main-container > p {
   text-align: center;
   padding-block: 0.25rem;
 }
 
 /* Layout, Classes and IDs  ===============================================  */
-.desktop {
+.desktop-img-container {
   display: none;
 }
 
-.panel {
+.login-panel {
   margin: 0 auto 0.625rem;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   border: 1px solid lightgray;
   width: 21.75rem;
   background-color: #FFF;
-}
-
-.content-cntr {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 form {
@@ -102,7 +97,7 @@ form {
   flex-direction: column;
 }
 
-.ig-logo {
+.ig-logo-container {
   width: 10.9375rem;
   text-align: center;
 }
@@ -142,7 +137,7 @@ form {
   vertical-align: bottom;
 }
 
-.content-cntr:last-child {
+.login-panel div:last-child {
   margin-bottom: 1.25rem;
 }
 
@@ -153,7 +148,7 @@ form {
   color: rgb(0, 55, 107);
 }
 
-.bottom-panel {
+.signup-panel {
   margin: 0 auto 1rem;
   border: 1px solid lightgray;
   width: 21.75rem;
@@ -162,7 +157,7 @@ form {
   padding-block: 1rem;
 }
 
-#appStores {
+#app-stores {
   text-align: center;
   padding-block: 1rem;
   margin-bottom: 4.75rem;
@@ -207,35 +202,35 @@ footer a:hover {
   body {
     padding-top: 0;
   }
-  .ig-logo > img {
+  .ig-logo-container > img {
     padding-block: 3rem 2rem;
   }
-  .panel, .bottom-panel {
+  .login-panel, .signup-panel {
     border: none;
     width: 100%;
     background-color: #FAFAFA;
   }
-  .bottom-panel {
+  .signup-panel {
     padding-block: 4.25rem;
   }
-  #appStores {
+  #app-stores {
     margin-bottom: 2.75rem;
   }
 } 
 
 /* Large devices  =========================================================  */
 @media only screen and (min-width: 54.75rem) {
-  .outer-cntr {
+  main {
     display: flex;
     justify-content: center;
   }
-  .main-cntr {
+  .main-container {
     margin-top: 0.75rem;
   }
-  .desktop {
+  .desktop-img-container {
     display: block;
   }
-  .desktop img {
+  .desktop-img-container > img {
     margin-right: 2rem;
   }
 } 
